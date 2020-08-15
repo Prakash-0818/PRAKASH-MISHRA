@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <style>
+body {
+    margin: 0;
+    padding: 40px;
+    background: url(redcar.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+}
+.imgcontainer {
+    width: 400px;
+    height: 850px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    top: 80%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+}
+
+input[type=text],
+input[type=password],
+input[type=number],
+input[type=email],
+input[type=radio]
+input[type=text\number] {
+width: 100%;
+padding: 10px 16px;
+margin: 8px 0;
+display: inline-block;
+border: none;
+border-bottom: 1px solid black;
+background: transparent;
+color:white;
+font-size: 14px;
+box-sizing: border-box;
+
+}
+
+.avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -7%;
+    left: calc(50% - 50px);
+
+}
+
+h2 {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 25px;
+    color: yellow;
+}
+   .slide-right {
+    width: 100%;
+    overflow: hidden;
+    margin-right: 100px;
+    max-width: 1000px;
+    text-align: left;
+    font-weight: bold;
+    color: rgb(09, 09, 56);
+}
+.slide-right h1{
+    animation: 5s slide-right 0s forwards;
+    transform: translateX(-100%);
+}
+@keyframes slide-right {
+    to {
+transform: translateX(0);
+    }
+    }
+
+
+
+
+container b {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+
+}
+.container {
+    padding: 06px;
+}
+
+button {
+background-color: rgb(7, 156, 7);
+color: black;
+padding: 8px 10px;
+margin: 6px 0;
+border: none;
+cursor: pointer;
+width: 100%;
+}
+
+button:hover{
+    cursor: pointer;
+    background:green ;
+    color:white ;
+}
+.cancelbtn {
+    width: auto;
+    margin: 8px 0;
+    padding: 10px 18px;
+    background-color: rgb(185, 7, 7);
+    float: right;
+}
+
+.cancelbtn:hover{
+    cursor: pointer;
+    background-color: rgb(221, 29, 29);
+    color: white;
+    
+}
+
+.loginbtn {
+    width: auto;
+    margin: 8px 0;
+    padding: 12px 22px;
+    background-color: rgb(16, 16, 211);
+    
+}
+.loginbtn:hover{
+    cursor: pointer;
+    background-color: blue;
+    color: pink;
+}
+
+
+
+    </style>
+</head>
+<body>
+    <div class="slide-right">
+    <h1>Welcome To @Rent-Dot.com</h1>
+    </div>
+
+<div class="imgcontainer">
+    <img src="user.png" alt="avatar" class="avatar">
+    <h2>Welcome</h2>
+
+<form action="#">
+<div class="container">
+    <label for="fname">
+        <b>Enter name</b>
+    <input type="text" placeholder="Enter full name" name="fname" id="fname" required>
+        
+    <label for="number">
+        <b>Mobile number</b>
+        <input type="number" placeholder="Enter mobile No" name="number" id="number" required>
+    </label>
+    
+    <label for="email">
+        <b>Email</b>
+        <input type="email" placeholder="Enter email" name="email" id="email" required>
+    </label>
+
+    <label for="address">
+        <b>Address</b>
+        <input type="text" placeholder="Enter Address" name="address" id="address" required>
+    </label>
+    <label for="gender">
+        <b>Gender</b>
+        <input type="radio" name="gender" id="gender">male
+        <input type="radio" name="gender" id="gender">female
+        <input type="radio" name="gender" id="gender">custom
+    </label>
+    <br>
+
+    <label for="Idcard">
+        <b>Identity</b>
+       <input type="text" placeholder="Enter Your Idcard" name="Idcard" id="Idcard" required>
+    </label>
+
+    <label for="age">
+        <b>Age</b>
+        <input type="number" placeholder="Enter Your Age" name="age" id="age" required>
+    </label>
+    <label for="uname">
+        <b>Username</b>
+        <input type="email" placeholder="username" name="uname" id="uname" required>
+    </label>
+
+    <label for="psw">
+        <b>Password</b>
+        <input type="password" placeholder="Set password" name="psw" id="psw" required>
+    </label>
+
+    <label>
+        <input type="checkbox" checked="checked" name="remember">Remember me
+    </label>
+
+    <button type="submit"><strong>Register</strong></button>
+</div>
+
+     <div  class="container">
+    <button type="reset" class="cancelbtn"><strong>Cancel</strong></button>
+</div>
+</form>
+
+      <div class="container">
+    <button type="submit" class="loginbtn"><strong>
+      <a href="demo.html" target="_blank" style="color:black;">Login</a></strong></button>
+</div> 
+      
+</div>
+</body>
+</html>
